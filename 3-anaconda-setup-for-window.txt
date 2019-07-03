@@ -1,0 +1,34 @@
+this will fix the issue that anaconda does not have tensorflow included in the default download package
+
+to solve no "tensorflow" package 
+
+1. open anaconda commend prompt
+	-press windows key
+	-type "anaconda prompt" directly (note: cmd will not work)
+2. check tensorflow are downloaded
+	-in anaconda prompt
+	-type "conda info --envs"
+	-"tensorflow" or "tensorflow-env" should appear
+	-if not follow instruction of 'extra: install-tensorflow' and continue
+	-if yes continue
+3. use tensorflow enviornment
+	-in anaconda prompt
+	-type "conda activate tensorflow"
+	-confirm that there's "(tensorflow)" shown on the right of the prompt
+	-type "jupyter notebook"
+4. test
+	-run "import tensorflow as tf"
+
+extra: install-tensorflow
+	-in anaconda prompt
+	-type "conda install tensorflow"
+	-note: it takes a while and have multiple files to be installed
+	-resume other steps
+
+extra: a nasty (but very short) way to solve the issue
+	-include "!pip install tensorflow" before import in jupyter notebook
+	-reason it's nasty: 
+		have to download large amount of files every reset kernal or start,
+		very very slow and doesn't shown progress
+	-reason to use:
+		it's a one line fix
