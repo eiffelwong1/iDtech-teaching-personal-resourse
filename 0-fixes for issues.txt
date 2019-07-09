@@ -1,0 +1,21 @@
+if `import tensorflow` doesn't work ->
+	open anaconda prompt, 
+	type `pip install tensorflow`, 
+	then type `conda install tensorflow`, 
+	then open jupyter notebook by typing in `jupiter notebook`.
+
+if `import keras` -> 
+	there are 2 ways, 
+		one same as the tensorflow one 
+		1-> open anaconda prompt, 
+		type `pip install keras`, 
+		then type `conda install keras`, 
+		then open jupyter notebook by typing in `jupyter notebook`.
+		2-> or just use `import tensorflow.keras`
+
+if `import gym` doesn't work (this fix is only tested on my desktop) ->
+	open anaconda prompt, type `pip install gym`,
+	(note, there we skipped the conda install cause anaconda don't have the package for it).
+	then open jupyter notebook by typing in `jupyter notebook`.
+
+	some other places suggested `conda install -c akode gym ` but i have no luck with

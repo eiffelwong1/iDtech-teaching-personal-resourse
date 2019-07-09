@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+
+for the plot, they updated to take in y first then x
+
+plt.plot(y, x) # <- this will be the correct way in current version
+
+
+https://github.com/jmathison/mach3-notebooks
